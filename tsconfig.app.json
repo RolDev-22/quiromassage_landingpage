@@ -25,6 +25,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "@components/*": ["./src/components/*"],
+      "@layout/*": ["./src/components/Layout/*"],
+      "@header/*": ["./src/components/Layout/Header/*"],
       "@styles/*": ["./src/styles/*"]
     }
   },

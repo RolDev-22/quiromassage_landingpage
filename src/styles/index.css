@@ -1,7 +1,10 @@
 @import "tailwindcss";
 
 :root {
+  --cl1: #01e5ff;
+  --cl2: #091023;
 }
 
 body {
+  background: var(--cl2);
 }

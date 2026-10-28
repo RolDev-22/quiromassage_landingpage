@@ -1,0 +1,23 @@
+.point_animation {
+  display: block;
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: rgba(0, 255, 251, 0.3);
+  animation: pulsation 1.3s infinite ease-in-out;
+}
+
+@keyframes pulsation {
+  0% {
+    transform: scale(0);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+  }
+  100% {
+    transform: scale(0.3);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
