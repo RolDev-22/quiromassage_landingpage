@@ -1,9 +1,43 @@
+import logo from "/logo.png";
 import TopBar from "@header/TopBar/TopBar";
+import { FaRegCalendarCheck } from "react-icons/fa6";
 
 export const Header = () => {
   return (
-    <div>
+    <header>
       <TopBar />
-    </div>
+      <section className="flex flex-row justify-between items-center py-3 px-2 gap-2 md:justify-between md:px-10 bg-gray-950 backdrop-blur-lg border-cyan-50/10 border-b border-t">
+        <article className="flex flex-wrap items-center justify-center text-center gap-3 select-none">
+          <figure className="h-20 w-20 flex-shrink-0">
+            <img
+              src={logo}
+              alt="Logo-Page"
+              className="w-full h-auto object-cover bg-cyan-700/20 rounded-full"
+            />
+          </figure>
+          <div className="flex flex-col gap-2 md:text-left">
+            <h2 className="title text-2xl md:text-4xl">
+              QUIRO<span className="text-cyan-300">MASSAGE</span>
+            </h2>
+            <h4 className="text-sm text-gray-400">LUXURY WELLNESS Y THERAPY</h4>
+          </div>
+        </article>
+        <a
+          href="#"
+          className="hoverA flex flex-row items-center py-1 px-1 text-cyan-300 border-2 border-cyan-300 rounded-4xl md:py-3 md:px-5 lg:hover:text-slate-900 lg:hover:bg-cyan-300 lg:hover:font-bold">
+          <p className="flex flex-row gap-2 items-center">
+            <FaRegCalendarCheck size={15} className="hidden md:flex" /> Agendar{" "}
+            <span className="hidden md:flex">Cita</span>
+          </p>
+        </a>
+
+        <label className="flex flex-col gap-2 w-8 lg:hidden">
+          <input className="peer hidden" type="checkbox" />
+          <div className="rounded-2xl h-0.75 w-1/2 bg-white duration-500 peer-checked:rotate-225 origin-right peer-checked:-translate-x-3 peer-checked:-translate-y-px" />
+          <div className="rounded-2xl h-0.75 w-full bg-white duration-500 peer-checked:-rotate-45" />
+          <div className="rounded-2xl h-0.75 w-1/2 bg-white duration-500 place-self-end peer-checked:rotate-225 origin-left peer-checked:translate-x-3 peer-checked:translate-y-px" />
+        </label>
+      </section>
+    </header>
   );
 };
