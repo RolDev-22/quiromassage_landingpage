@@ -8,9 +8,9 @@ export const Header = () => {
   const [active, setActive] = useState(false);
 
   return (
-    <header>
+    <header className="fixed w-full">
       <TopBar />
-      <section className="flex flex-row justify-between items-center py-3 px-2 gap-2 md:justify-between md:px-3 xl:px-10 bg-gray-950 backdrop-blur-lg border-cyan-50/10 border-b border-t">
+      <section className="flex flex-row justify-between items-center py-3 px-2 gap-2 md:justify-between md:px-3 xl:px-10 bg-gray-950/80 backdrop-blur-lg border-cyan-50/10 border-b border-t">
         <article className="flex flex-wrap items-center justify-center text-center gap-3 select-none">
           <figure className="h-10 w-10 md:h-20 md:w-20 shrink-0">
             <img
@@ -20,7 +20,7 @@ export const Header = () => {
             />
           </figure>
           <div className="flex flex-col gap-2 md:text-left">
-            <h2 className="title text-2xl md:text-3xl">
+            <h2 className="hidden md:flex title text-2xl md:text-3xl">
               QUIRO<span className="text-cyan-300">MASSAGE</span>
             </h2>
             <h4 className="hidden md:flex text-sm text-gray-400">
@@ -54,6 +54,7 @@ export const Header = () => {
           />
         </label>
       </section>
+      <span className="advance"></span>
     </header>
   );
 };

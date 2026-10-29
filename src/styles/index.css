@@ -18,8 +18,47 @@ body {
   color: var(--cl0);
 }
 
+/* Ancho de la barra vertical */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cl1);
+  border-radius: 10px;
+}
+
 .title {
   font-family: var(--fnt2);
   font-weight: 500;
   font-style: normal;
+}
+
+.sharedStyle {
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
+}
+
+.advance {
+  display: flex;
+  width: 0;
+  height: 1px;
+  background-color: var(--cl1);
+
+  animation: progress-grow auto linear;
+  animation-timeline: scroll(root block);
+}
+
+@keyframes progress-grow {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
