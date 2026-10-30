@@ -8,7 +8,7 @@ export const Header = () => {
   const [active, setActive] = useState(false);
 
   return (
-    <header className="fixed w-full">
+    <header className="sticky top-0 w-full z-99">
       <TopBar />
       <section className="flex flex-row justify-between items-center py-3 px-2 gap-2 md:justify-between md:px-3 xl:px-10 bg-gray-950/80 backdrop-blur-lg border-cyan-50/10 border-b border-t">
         <article className="flex flex-wrap items-center justify-center text-center gap-3 select-none">

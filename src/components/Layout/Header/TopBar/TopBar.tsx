@@ -10,7 +10,7 @@ const TopBar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
+      if (window.scrollY > 30) {
         setScrollActive(true);
       } else {
         setScrollActive(false);
@@ -24,7 +24,7 @@ const TopBar = () => {
 
   return (
     <div
-      className={`${scrollActive ? "hidden" : "block"} text-gray-200 flex flex-wrap px-5 py-1 justify-center md:justify-between text-sm gap-3 text-center xl:px-20`}>
+      className={`${scrollActive ? "hidden" : "block"} smallScrren text-gray-200 flex flex-wrap px-5 py-1 justify-center md:justify-between text-sm gap-3 text-center xl:px-20`}>
       <div className="flex flex-wrap gap-2 justify-center">
         <a
           href="#"

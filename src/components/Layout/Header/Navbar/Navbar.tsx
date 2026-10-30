@@ -6,7 +6,7 @@ const Navbar = ({ active }: NavbarProps) => {
   return (
     <nav
       className={`${active ? "flex flex-col absolute top-full left-0 w-full bg-gray-950 p-4 border-b border-cyan-50/10 shadow-lg" : "hidden"} lg:flex lg:flex-row lg:static lg:w-auto lg:shadow-none lg:bg-transparent lg:p-0 lg:border-none`}>
-      <ul className="font-light w-1xl flex flex-col items-center md:flex-row  justify-around text-1xl gap-3 xl:text-2xl xl:gap-5 2xl:gap-10 ">
+      <ul className="font-light w-1xl flex flex-col items-center md:flex-row  justify-around text-sm gap-3  xl:text-lg xl:gap-5 2xl:gap-10 ">
         <a href="#" className="cursor-pointer lg:hover:text-cyan-300">
           Inicio
         </a>

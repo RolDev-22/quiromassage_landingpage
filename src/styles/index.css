@@ -39,8 +39,9 @@ body {
 }
 
 .sharedStyle {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
   min-height: 100dvh;
 }
 
@@ -52,6 +53,12 @@ body {
 
   animation: progress-grow auto linear;
   animation-timeline: scroll(root block);
+}
+
+@media screen and (width <= 320px) {
+  .smallScrren {
+    display: none;
+  }
 }
 
 @keyframes progress-grow {
