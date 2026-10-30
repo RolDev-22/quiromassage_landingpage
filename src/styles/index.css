@@ -38,13 +38,6 @@ body {
   font-style: normal;
 }
 
-.sharedStyle {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  min-height: 100dvh;
-}
-
 .advance {
   display: flex;
   width: 0;

@@ -8,9 +8,9 @@ import ImgBg from "/img1.jpg";
 
 export default function Home() {
   return (
-    <section id="home" className="sharedStyle">
+    <section id="home" className="flex flex-col justify-center">
       <div className="flex flex-col w-full p-0.5 md:flex-col md:w-3xl md:self-center lg:flex-row lg:w-4xl xl:w-6xl 2xl:w-full">
-        <div className="flex flex-col p-3 gap-10 lg:w-2/3 xl:gap-5 2xl:gap-10 2xl:w-2/4">
+        <div className="flex flex-col p-3 gap-10 lg:w-2/3 lg:gap-11 xl:gap-7 2xl:gap-10 2xl:w-2/3">
           <span className="flex items-center self-center gap-2 p-1 px-3 rounded-2xl text-cyan-300 bg-cyan-500/20 border border-cyan-300 lg:self-start ">
             <ImPower /> Equilibra tu cuerpo y mente
           </span>
@@ -39,7 +39,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col w-full justify-start items-center lg:w-1/3 2xl:w-2/4">
-          <article className="flex flex-col p-1 bg-white rounded-md gap-2 w-11/12 h-11/12 lg:w-full lg:h-12/12 xl:h-20/20 2xl:h-17/20 ">
+          <article className="flex flex-col p-1 bg-white rounded-md gap-2 w-11/12 h-11/12 lg:w-full lg:h-12/12 xl:h-20/20 2xl:h-19/20 ">
             <figure className="relative rounded-lg overflow-hidden lg:h-full">
               <img
                 className="w-full h-auto object-cover xl:h-12/12"
