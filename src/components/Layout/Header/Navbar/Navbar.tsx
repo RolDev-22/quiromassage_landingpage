@@ -11,7 +11,7 @@ const Navbar = ({ active }: NavbarProps) => {
           Inicio
         </a>
         <a href="#about" className="cursor-pointer lg:hover:text-cyan-300">
-          Ubicacion & Domicilio
+          Sobre Nosotros
         </a>
         <a className="cursor-pointer lg:hover:text-cyan-300">Servicios</a>
         <a href="#" className="cursor-pointer lg:hover:text-cyan-300">

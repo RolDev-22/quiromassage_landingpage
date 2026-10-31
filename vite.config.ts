@@ -15,6 +15,7 @@ export default defineConfig({
       "@header": path.resolve(__dirname, "./src/components/Layout/Header"),
       "@styles": path.resolve(__dirname, "./src/styles"),
       "@pages": path.resolve(__dirname, "./src/pages"),
+      "@assets": path.resolve(__dirname, "./src/assets"),
     },
   },
 });

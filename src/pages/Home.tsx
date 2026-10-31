@@ -4,7 +4,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { AiFillTikTok } from "react-icons/ai";
 import { FaYoutube } from "react-icons/fa";
-import ImgBg from "/img1.jpg";
+import ImgBg from "@assets/img1.jpg";
 
 export default function Home() {
   return (
@@ -20,7 +20,7 @@ export default function Home() {
               eleva tu bienestar
             </span>
           </h1>
-          <h4 className="self-center text-center text-2xl md:w-3/4 lg:w-full lg:text-justify">
+          <h4 className="self-center text-center text-lg md:w-3/4 lg:w-full md:text-2xl lg:text-justify">
             Quiromasaje profesional y terapias holísticas personalizadas.
             Visítanos en nuestro consultorio en Naranjo de Laurel o solicita tu
             sesión a domicilio en Corredores.
