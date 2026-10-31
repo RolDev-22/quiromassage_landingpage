@@ -1,14 +1,12 @@
 import { Header } from "@components/Layout/Header/Header";
-import Home from "@pages/Home";
-import About from "@pages/About";
+import { AppRoutes } from "@routes/AppRoutes";
 
 function App() {
   return (
     <>
       <Header />
       <main>
-        <Home />
-        <About />
+        <AppRoutes />
       </main>
     </>
   );
