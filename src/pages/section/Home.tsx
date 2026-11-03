@@ -1,3 +1,4 @@
+import moveTo from "@utils/moveTo";
 import { ImPower } from "react-icons/im";
 import { FaCalendarAlt } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
@@ -25,17 +26,17 @@ export default function Home() {
             Visítanos en nuestro consultorio en Naranjo de Laurel o solicita tu
             sesión a domicilio en Corredores.
           </h4>
-          <div className="flex flex-col gap-4 lg:flex-row">
-            <a
-              href="#"
-              className="flex p-2 bg-cyan-300 text-indigo-950 justify-center items-center gap-2 rounded-full px-10 md:w-7/12 md:self-center">
+          <div className="flex flex-col gap-4 lg:flex-row uppercase">
+            <button
+              onClick={() => moveTo("reserve")}
+              className="flex w-90 p-2 bg-(--cl1) text-indigo-950 justify-center items-center gap-2 self-center rounded-full px-10 md:w-8/12 md:self-center md:min-h-15">
               <FaCalendarAlt /> Consulta Horarios Libres
-            </a>
-            <a
-              href="#"
-              className="flex p-2 bg-cyan-900 justify-center px-10 rounded-full border border-transparent md:w-7/12 md:self-center lg:hover:border-cyan-300">
+            </button>
+            <button
+              onClick={() => moveTo("rate")}
+              className="flex w-90 p-2 bg-cyan-900 justify-center items-center self-center px-10 rounded-full border border-transparent md:w-8/12 md:self-center md:min-h-15 lg:hover:border-cyan-300">
               Mira nuestros servicios
-            </a>
+            </button>
           </div>
         </div>
         <div className="flex flex-col w-full justify-start items-center lg:w-1/3 2xl:w-2/4">

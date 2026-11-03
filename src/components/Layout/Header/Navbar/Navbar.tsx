@@ -1,17 +1,11 @@
 import { Link } from "react-router-dom";
+import moveTo from "@utils/moveTo";
 
 interface NavbarProps {
   active: boolean;
 }
 
 const Navbar = ({ active }: NavbarProps) => {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <nav
       className={`${active ? "flex flex-col absolute top-full left-0 w-full bg-gray-950 p-4 border-b border-cyan-50/10 shadow-lg" : "hidden"} lg:flex lg:flex-row lg:static lg:w-auto lg:shadow-none lg:bg-transparent lg:p-0 lg:border-none`}>
@@ -19,35 +13,35 @@ const Navbar = ({ active }: NavbarProps) => {
         <li>
           <Link
             to="/"
-            onClick={() => scrollToSection("home")}
+            onClick={() => moveTo("home")}
             className="cursor-pointer lg:hover:text-cyan-300 transition-colors">
             Inicio
           </Link>
         </li>
         <li>
           <button
-            onClick={() => scrollToSection("about")}
+            onClick={() => moveTo("about")}
             className="cursor-pointer lg:hover:text-cyan-300 transition-colors">
             Sobre Nosotros
           </button>
         </li>
         <li>
           <button
-            onClick={() => scrollToSection("service")}
-            className="cursor-pointer lg:hover:text-cyan-300 transition-colors">
-            Servicios
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => scrollToSection("package")}
+            onClick={() => moveTo("rate")}
             className="cursor-pointer lg:hover:text-cyan-300 transition-colors">
             Planes & Paquetes
           </button>
         </li>
         <li>
           <button
-            onClick={() => scrollToSection("faq")}
+            onClick={() => moveTo("reserve")}
+            className="cursor-pointer lg:hover:text-cyan-300 transition-colors">
+            Reservas
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => moveTo("faq")}
             className="cursor-pointer lg:hover:text-cyan-300 transition-colors">
             FAQ
           </button>
