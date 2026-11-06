@@ -60,11 +60,18 @@ body {
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
+/* ELIMINAR AL TERMINAR PAGINAS */
 .pb {
   display: grid;
   place-items: center;
   min-height: 100vh;
   min-width: 100vw;
+}
+
+.about-Cards {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
 
 @media screen and (width <= 320px) {
@@ -79,5 +86,18 @@ body {
   }
   to {
     width: 100%;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: scale(0.75);
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0px);
   }
 }

@@ -1,4 +1,9 @@
 import triangule from "@assets/t.webp";
+import img_1 from "@assets/line1.webp";
+import img_2 from "@assets/line2.webp";
+import img_3 from "@assets/line3.webp";
+import img_4 from "@assets/line4.webp";
+import img_5 from "@assets/line5.webp";
 import moveTo from "@utils/moveTo";
 import { LuHousePlus } from "react-icons/lu";
 import { RiMapPinRangeFill } from "react-icons/ri";
@@ -46,7 +51,7 @@ export default function About() {
       <h3 className=" w-90 p-3 text-(--cl3) bg-cyan-500/20 border border-cyan-300 text-center uppercase rounded-full font-bold md:w-100 ">
         Como tu lo prefieras
       </h3>
-      <div className="w-full flex flex-col gap-5 p-5 items-center justify-between sm:flex-row md:justify-around">
+      <div className="w-full flex flex-col gap-5 p-5 items-center justify-between sm:flex-row md:justify-around lg:w-11/12">
         <article className="boxShaw flex flex-col gap-2 p-3 text-justify text-(--cl4) rounded-2xl w-90 lg:w-1/2">
           <div className="flex flex-row gap-3">
             <span className="flex items-center w-20 justify-center rounded-full bg-(--cl1)/30 border border-(--cl1) p-2">
@@ -74,7 +79,7 @@ export default function About() {
 
             <button
               onClick={() => moveTo("rate")}
-              className="flex w-1/4 items-center gap-2 p-2 rounded-lg bg-(--cl1)/30 text-(--cl3) justify-center">
+              className="flex w-1/4 items-center gap-2 p-2 rounded-lg bg-(--cl1)/30 text-(--cl3) justify-center border border-transparent lg:hover:border-cyan-500">
               Tarifa <FaLongArrowAltRight />
             </button>
           </div>
@@ -107,10 +112,104 @@ export default function About() {
 
             <button
               onClick={() => moveTo("rate")}
-              className="flex w-1/4 items-center gap-2 p-2 rounded-lg bg-(--cl1)/30 text-(--cl3) justify-center">
+              className="flex w-1/4 items-center gap-2 p-2 rounded-lg bg-(--cl1)/30 text-(--cl3) justify-center border border-transparent transition-all  lg:hover:border-cyan-500">
               Tarifa <FaLongArrowAltRight />
             </button>
           </div>
+        </article>
+      </div>
+      <h3 className=" w-90 p-3 text-(--cl3) bg-cyan-500/20 border border-cyan-300 text-center uppercase rounded-full font-bold md:w-100 ">
+        Conocenos
+      </h3>
+      <div className="lineEffect relative w-full flex flex-col mt-5 text-center text-(--cl5) gap-3 p-2 lg:w-10/12 lg:grid lg:grid-cols-2 lg:place-items-center lg:p-5">
+        <article className="boxShaw about-Cards p-1 rounded-md lg:row-span-3 lg:row-start-1">
+          <figure className="float-start w-1/3 h-25 mr-1 mb-0 md:h-45 md:mr-5 lg:h-60">
+            <img
+              src={img_1}
+              alt="image-to-about"
+              className="w-full h-full object-cover rounded-md"
+            />
+          </figure>
+          <h3 className="lg:text-3xl">¿QUIÉNES SOMOS?</h3>
+          <p className="text-justify p-1 lg:text-lg">
+            Somos un espacio dedicado al bienestar integral, donde combinamos
+            técnicas de masaje terapéutico, quiropráctica y enfoques holísticos
+            para brindar una experiencia de cuidado y armonía. Creemos que el
+            bienestar comienza cuando aprendemos a escuchar nuestro cuerpo y
+            reconocer sus necesidades.
+          </p>
+        </article>
+        {/*  */}
+        <article className="boxShaw about-Cards p-1 rounded-md lg:row-span-3 lg:row-start-3">
+          <figure className="float-end w-1/3 h-25 ml-1 mb-0 md:h-45 md:ml-5 lg:h-60">
+            <img
+              src={img_2}
+              alt="image-to-about"
+              className="w-full h-full object-cover rounded-md"
+            />
+          </figure>
+          <h3 className="lg:text-3xl">¿POR QUÉ NACIMOS?</h3>
+          <p className="text-justify p-1 lg:text-lg">
+            Nacimos de la pasión por ayudar a las personas a encontrar un
+            equilibrio entre cuerpo y mente. El ritmo de vida, el estrés y las
+            tensiones del día a día pueden alejarnos de nuestro bienestar. Por
+            eso, creamos un espacio donde puedas hacer una pausa, liberar
+            tensiones y regalarte un momento para ti.
+          </p>
+        </article>
+        {/*  */}
+        <article className="boxShaw about-Cards p-1 rounded-md lg:row-span-3 lg:row-start-5">
+          <figure className="float-start w-1/3 h-25 mr-1 mb-0 md:h-45 md:mr-5 lg:h-60">
+            <img
+              src={img_3}
+              alt="image-to-about"
+              className="w-full h-full object-cover rounded-md"
+            />
+          </figure>
+          <h3 className="lg:text-3xl">¿POR QUÉ ELEGIRNOS?</h3>
+          <p className="text-justify p-1 lg:text-lg">
+            Enfocados en experiencias personalizadas, combinando técnicas
+            terapéuticas y un trato humano para atender tus necesidades de
+            bienestar. Atención cercana y personalizada. Ambiente diseñado para
+            tu tranquilidad. Diversidad de técnicas de masaje y bienestar
+            holístico. Enfoque integral en el cuidado corporal.
+          </p>
+        </article>
+        {/*  */}
+        <article className="boxShaw about-Cards p-1 rounded-md lg:row-span-3 lg:row-start-7">
+          <figure className="float-end w-1/3 h-25 ml-1 mb-0 md:h-45 md:ml-5 lg:h-60">
+            <img
+              src={img_4}
+              alt="image-to-about"
+              className="w-full h-full object-cover rounded-md"
+            />
+          </figure>
+          <h3 className="lg:text-3xl">NUESTRA FILOSOFÍA</h3>
+          <p className="text-justify p-1 lg:text-lg">
+            Basada en comprender a cada persona de manera integral, reconociendo
+            que cada cuerpo tiene necesidades únicas y merece un cuidado
+            consciente y respetuoso. Promovemos la importancia de escuchar
+            nuestro cuerpo, conectar con nuestras emociones y adoptar hábitos
+            que nos permitan vivir con mayor plenitud.
+          </p>
+        </article>
+        {/*  */}
+        <article className="boxShaw about-Cards p-1 rounded-md lg:row-span-3 lg:row-start-9">
+          <figure className="float-start w-1/3 h-25 mr-1 mb-0 md:h-45 md:mr-5 lg:h-60">
+            <img
+              src={img_5}
+              alt="image-to-about"
+              className="w-full h-full object-cover rounded-md"
+            />
+          </figure>
+          <h3 className="lg:text-3xl">NUESTRO COMPROMISO</h3>
+          <p className="text-justify p-1 lg:text-lg">
+            Brindarte atención cálida, responsable y personalizada, poniendo
+            siempre tu bienestar en el centro de cada experiencia. Dedicación y
+            vocación de servicio para ofrecerte un espacio seguro, tranquilo y
+            profesional, donde puedas sentirte escuchado y acompañado.
+            Ofreciendo tratamientos adaptados a tus necesidades.
+          </p>
         </article>
       </div>
     </section>
