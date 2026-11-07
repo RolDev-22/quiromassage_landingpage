@@ -68,10 +68,54 @@ body {
   min-width: 100vw;
 }
 
-.about-Cards {
-  animation: appear linear;
+/* FIRST CHARGE EFFECT */
+.entryEffectUp {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fadeYAnim 0.8s ease-out forwards;
+}
+
+.entryEffectDown {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeYAnim 0.8s ease-out forwards;
+}
+
+.entryEffectLeft {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: fadeXAnim 0.8s ease-out forwards;
+}
+
+.entryEffectRight {
+  opacity: 0;
+  transform: translateX(30px);
+  animation: fadeXAnim 0.8s ease-out forwards;
+}
+
+/* SCROLL EFFECTS */
+.fadeEntry {
+  animation: slideDown linear;
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
+}
+
+.softEntry {
+  animation: slideDown1 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+.entryRight {
+  animation: slideInRight backwards;
+  animation-timeline: view();
+  animation-range: contain;
+}
+
+.entryLeft {
+  animation: slideInLeft backwards;
+  animation-timeline: view();
+  animation-range: contain;
 }
 
 @media screen and (width <= 320px) {
@@ -80,6 +124,7 @@ body {
   }
 }
 
+/* EFECTO DE BARRA DE PROGRESO */
 @keyframes progress-grow {
   from {
     width: 0%;
@@ -89,7 +134,8 @@ body {
   }
 }
 
-@keyframes appear {
+/* EFECTOS DE ENTRADA CON SCROLL */
+@keyframes slideDown {
   from {
     opacity: 0;
     transform: scale(0.75);
@@ -99,5 +145,51 @@ body {
     opacity: 1;
     transform: scale(1);
     filter: blur(0px);
+  }
+}
+
+@keyframes slideDown1 {
+  from {
+    transform: scale(0.75);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+/* CONTROL DE ENTRADA */
+@keyframes fadeYAnim {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeXAnim {
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

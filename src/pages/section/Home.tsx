@@ -15,13 +15,13 @@ export default function Home() {
           <span className="flex items-center self-center gap-2 p-1 px-3 rounded-2xl text-cyan-300 bg-cyan-500/20 border border-cyan-300 lg:self-start ">
             <ImPower /> Equilibra tu cuerpo y mente
           </span>
-          <h1 className="title text-3xl text-center md:text-5xl md:w-2xl md:self-center lg:w-12/12 lg:self-start lg:text-left xl:text-8xl 2xl:text-9xl">
+          <h1 className="entryEffectRight title text-3xl text-center md:text-5xl md:w-2xl md:self-center lg:w-12/12 lg:self-start lg:text-left xl:text-8xl 2xl:text-9xl">
             Reconecta tu cuerpo,{" "}
             <span className="inline-block bg-linear-to-b from-white via-cyan-200 to-cyan-300 bg-clip-text text-transparent">
               eleva tu bienestar
             </span>
           </h1>
-          <h4 className="self-center text-center text-lg md:w-3/4 lg:w-full md:text-2xl lg:text-justify">
+          <h4 className="entryEffectDown self-center text-center text-lg md:w-3/4 lg:w-full md:text-2xl lg:text-justify">
             Quiromasaje profesional y terapias holísticas personalizadas.
             Visítanos en nuestro consultorio en Naranjo de Laurel o solicita tu
             sesión a domicilio en Corredores.
@@ -29,18 +29,18 @@ export default function Home() {
           <div className="flex flex-col gap-4 lg:flex-row uppercase">
             <button
               onClick={() => moveTo("reserve")}
-              className="flex w-90 p-2 bg-(--cl1) text-indigo-950 justify-center items-center gap-2 self-center rounded-full px-10 md:w-8/12 md:self-center md:min-h-15">
+              className="entryEffectLeft flex w-90 p-2 bg-(--cl1) text-indigo-950 justify-center items-center gap-2 self-center rounded-full px-10 md:w-8/12 md:self-center md:min-h-15">
               <FaCalendarAlt /> Consulta Horarios Libres
             </button>
             <button
               onClick={() => moveTo("rate")}
-              className="flex w-90 p-2 bg-cyan-900 justify-center items-center self-center px-10 rounded-full border border-transparent md:w-8/12 md:self-center md:min-h-15 lg:hover:border-cyan-300">
+              className="entryEffectRight flex w-90 p-2 bg-cyan-900 justify-center items-center self-center px-10 rounded-full border border-transparent md:w-8/12 md:self-center md:min-h-15 lg:hover:border-cyan-300">
               Mira nuestros servicios
             </button>
           </div>
         </div>
         <div className="flex flex-col w-full justify-start items-center lg:w-1/3 2xl:w-2/4">
-          <article className="flex flex-col p-1 bg-white rounded-md gap-2 w-11/12 h-11/12 lg:w-full lg:h-12/12 xl:h-20/20 2xl:h-19/20 ">
+          <article className="entryEffectLeft flex flex-col p-1 bg-white rounded-md gap-2 w-11/12 h-11/12 lg:w-full lg:h-12/12 xl:h-20/20 2xl:h-19/20 ">
             <figure className="relative rounded-lg overflow-hidden lg:h-full">
               <img
                 className="w-full h-auto object-cover xl:h-12/12"
