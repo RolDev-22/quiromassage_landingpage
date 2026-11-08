@@ -1,0 +1,34 @@
+[
+  {
+    "idService": 1,
+    "iconService": "FaBone",
+    "typeService": "ESPECIALIDAD",
+    "nameService": "Quiromasaje Descontracturante",
+    "descriptionService": "Presión profunda dirigida a disolver nudos muscular y nudos de tensión.",
+    "activeControl": false
+  },
+  {
+    "idService": 2,
+    "iconService": "PiFlowerLotusFill",
+    "typeService": "ESPECIALIDAD",
+    "nameService": "Masaje Relajante & Aromaterapia",
+    "descriptionService": "Pases suaves y envueltos en aceites esenciales para sedar el estrés diario.",
+    "activeControl": false
+  },
+  {
+    "idService": 3,
+    "iconService": "MdSportsGymnastics",
+    "typeService": "ESPECIALIDAD",
+    "nameService": "Quiromasaje Deportivo",
+    "descriptionService": "Recuperación muscular intensiva para piernas y torso pre/post entrenamiento.",
+    "activeControl": false
+  },
+  {
+    "idService": 4,
+    "iconService": "GiBowlSpiral",
+    "typeService": "ESPECIALIDAD",
+    "nameService": "Terapia Holística & Espiritual",
+    "descriptionService": "Alineación de puntos energéticos y masaje integral de 80 minutos.",
+    "activeControl": true
+  }
+]

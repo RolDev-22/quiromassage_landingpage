@@ -1,6 +1,5 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Coiny&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Titan+One&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Alyamama:wght@300..900&family=Coiny&family=Montserrat:ital@0;1&family=Mukta:wght@200;300;400;500;600;700;800&family=Titan+One&display=swap");
 :root {
   /* Colors */
   --cl0: #fff;
@@ -9,12 +8,24 @@
   --cl3: #0092b9;
   --cl4: #2d5285;
   --cl5: #053345;
+  --cl6: #729bab;
 
   /* FONTS */
   --fnt1: "Alfa Slab One", serif;
   --fnt2: "Titan One", sans-serif;
   --fnt3: "Coiny", system-ui;
   --fnt4: "Montserrat", sans-serif;
+  --fnt5: "Alyamama", serif;
+  --fnt6: "Mukta", sans-serif;
+}
+
+@theme {
+  --font-fnt1: var(--fnt1);
+  --font-fnt2: var(--fnt2);
+  --font-fnt3: var(--fnt3);
+  --font-fnt4: var(--fnt4);
+  --font-fnt5: var(--fnt5);
+  --font-fnt6: var(--fnt6);
 }
 
 body {
@@ -55,8 +66,8 @@ body {
 
 .boxShaw {
   box-shadow:
-    rgba(50, 50, 93, 0.25) 0px 50px 700px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 30px -30px,
+    rgba(50, 50, 93, 0.25) 0px 10px 10px -10px,
+    rgba(0, 0, 0, 0.3) 0px 20px 10px -10px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
@@ -103,19 +114,19 @@ body {
 .softEntry {
   animation: slideDown1 linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 50%;
+  animation-range: entry 0% cover 10%;
 }
 
 .entryRight {
   animation: slideInRight backwards;
   animation-timeline: view();
-  animation-range: contain;
+  animation-range: entry 0% cover 50%;
 }
 
 .entryLeft {
   animation: slideInLeft backwards;
   animation-timeline: view();
-  animation-range: contain;
+  animation-range: entry 0% cover 50%;
 }
 
 @media screen and (width <= 320px) {
@@ -150,10 +161,10 @@ body {
 
 @keyframes slideDown1 {
   from {
-    transform: scale(0.75);
+    transform: translateY(100px);
   }
   to {
-    transform: scale(1);
+    transform: translateY(0px);
   }
 }
 

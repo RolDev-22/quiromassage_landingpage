@@ -9,7 +9,7 @@ import ImgBg from "@assets/img1.jpg";
 
 export default function Home() {
   return (
-    <section id="home" className="flex flex-col justify-center">
+    <section id="home" className="flex flex-col justify-center mt-0">
       <div className="flex flex-col w-full p-0.5 md:flex-col md:w-3xl md:self-center lg:flex-row lg:w-4xl xl:w-6xl 2xl:w-full">
         <div className="flex flex-col p-3 gap-10 lg:w-2/3 lg:gap-11 xl:gap-7 2xl:gap-10 2xl:w-2/3">
           <span className="flex items-center self-center gap-2 p-1 px-3 rounded-2xl text-cyan-300 bg-cyan-500/20 border border-cyan-300 lg:self-start ">
@@ -29,12 +29,12 @@ export default function Home() {
           <div className="flex flex-col gap-4 lg:flex-row uppercase">
             <button
               onClick={() => moveTo("reserve")}
-              className="entryEffectLeft flex w-90 p-2 bg-(--cl1) text-indigo-950 justify-center items-center gap-2 self-center rounded-full px-10 md:w-8/12 md:self-center md:min-h-15">
+              className="entryEffectLeft flex w-90 p-2 bg-(--cl1) text-indigo-950 justify-center items-center gap-2 self-center rounded-full px-10 text-lg md:w-8/12 md:self-center md:min-h-15">
               <FaCalendarAlt /> Consulta Horarios Libres
             </button>
             <button
               onClick={() => moveTo("rate")}
-              className="entryEffectRight flex w-90 p-2 bg-cyan-900 justify-center items-center self-center px-10 rounded-full border border-transparent md:w-8/12 md:self-center md:min-h-15 lg:hover:border-cyan-300">
+              className="entryEffectRight flex w-90 p-2 bg-cyan-900 justify-center items-center self-center px-10 rounded-full border border-transparent text-lg md:w-8/12 md:self-center md:min-h-15 lg:hover:border-cyan-300">
               Mira nuestros servicios
             </button>
           </div>

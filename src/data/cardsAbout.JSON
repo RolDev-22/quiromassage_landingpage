@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "¿QUIÉNES SOMOS?",
+    "image": "@assets/line1.webp",
+    "description": "Somos un espacio dedicado al bienestar integral, donde combinamos técnicas de masaje terapéutico, quiropráctica y enfoques holísticos para brindar una experiencia de cuidado y armonía. Creemos que el bienestar comienza cuando aprendemos a escuchar nuestro cuerpo y reconocer sus necesidades."
+  },
+  {
+    "id": 2,
+    "title": "¿POR QUÉ NACIMOS?",
+    "image": "@assets/line2.webp",
+    "description": "Nacimos de la pasión por ayudar a las personas a encontrar un equilibrio entre cuerpo y mente. El ritmo de vida, el estrés y las tensiones del día a día pueden alejarnos de nuestro bienestar. Por eso, creamos un espacio donde puedas hacer una pausa, liberar tensiones y regalarte un momento para ti."
+  },
+  {
+    "id": 3,
+    "title": "¿POR QUÉ ELEGIRNOS?",
+    "image": "@assets/line3.webp",
+    "description": "Enfocados en experiencias personalizadas, combinando técnicas terapéuticas y un trato humano para atender tus necesidades de bienestar. Atención cercana y personalizada. Ambiente diseñado para tu tranquilidad. Diversidad de técnicas de masaje y bienestar holístico. Enfoque integral en el cuidado corporal."
+  },
+  {
+    "id": 4,
+    "title": "NUESTRA FILOSOFÍA",
+    "image": "@assets/line4.webp",
+    "description": "Basada en comprender a cada persona de manera integral, reconociendo que cada cuerpo tiene necesidades únicas y merece un cuidado consciente y respetuoso. Promovemos la importancia de escuchar nuestro cuerpo, conectar con nuestras emociones y adoptar hábitos que nos permitan vivir con mayor plenitud."
+  },
+  {
+    "id": 5,
+    "title": "NUESTRO COMPROMISO",
+    "image": "@assets/line5.webp",
+    "description": "Brindarte atención cálida, responsable y personalizada, poniendo siempre tu bienestar en el centro de cada experiencia. Dedicación y vocación de servicio para ofrecerte un espacio seguro, tranquilo y profesional, donde puedas sentirte escuchado y acompañado. Ofreciendo tratamientos adaptados a tus necesidades."
+  }
+]
