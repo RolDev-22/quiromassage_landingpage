@@ -80,13 +80,13 @@ export default function Rate() {
           <button
             id="btn-pricing-clinic"
             onClick={() => setActiveService(!activeService)}
-            className={`flex flex-row items-center rounded-full p-3 gap-2 ${activeService ? "bg-(--cl1) text-(--cl2)" : "bg-transparent text-(--cl6)"} md:w-1/2`}>
+            className={`flex flex-row items-center rounded-full p-3 gap-2 justify-center ${activeService ? "bg-(--cl1) text-(--cl2)" : "bg-transparent text-(--cl6)"} md:w-1/2`}>
             <GiFamilyHouse size={24} /> En Consultorio (Naranjo)
           </button>
           <button
             id="btn-pricing-home"
             onClick={() => setActiveService(!activeService)}
-            className={`flex flex-row items-center rounded-full p-3 gap-2 ${!activeService ? "bg-(--cl1) text-(--cl2)" : "bg-transparent text-(--cl6)"} md:w-1/2`}>
+            className={`flex flex-row items-center rounded-full p-3 gap-2 justify-center ${!activeService ? "bg-(--cl1) text-(--cl2)" : "bg-transparent text-(--cl6)"} md:w-1/2`}>
             <TbTruckDelivery size={24} /> A Domicilio (Corredores)
           </button>
         </div>
