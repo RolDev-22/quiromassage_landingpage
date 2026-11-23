@@ -76,17 +76,17 @@ export default function Rate() {
       </h2>
 
       <div className="flex justify-center w-full">
-        <div className="mt-8 inline-flex items-center bg-navy-950 p-1.5 rounded-full border border-white/10 shadow-2xl gap-2 self-center">
+        <div className="w-90 mt-8 inline-flex items-center justify-center bg-navy-950 p-1.5 rounded-full border border-white/10 shadow-2xl gap-2 self-center md:w-xl">
           <button
             id="btn-pricing-clinic"
             onClick={() => setActiveService(!activeService)}
-            className={`flex flex-row items-center  rounded-full p-3 gap-2 ${activeService ? "bg-(--cl1) text-(--cl2)" : "bg-transparent text-(--cl6)"}`}>
+            className={`flex flex-row items-center rounded-full p-3 gap-2 ${activeService ? "bg-(--cl1) text-(--cl2)" : "bg-transparent text-(--cl6)"} md:w-1/2`}>
             <GiFamilyHouse size={24} /> En Consultorio (Naranjo)
           </button>
           <button
             id="btn-pricing-home"
             onClick={() => setActiveService(!activeService)}
-            className={`flex flex-row items-center rounded-full p-3 gap-2 ${!activeService ? "bg-(--cl1) text-(--cl2)" : "bg-transparent text-(--cl6)"}`}>
+            className={`flex flex-row items-center rounded-full p-3 gap-2 ${!activeService ? "bg-(--cl1) text-(--cl2)" : "bg-transparent text-(--cl6)"} md:w-1/2`}>
             <TbTruckDelivery size={24} /> A Domicilio (Corredores)
           </button>
         </div>
