@@ -72,7 +72,7 @@ export default function About() {
           </figure>
         </article>
       </div>
-      <h3 className="softEntry w-90 p-3 text-(--cl3) bg-cyan-500/20 border border-cyan-300 text-center uppercase rounded-full font-bold md:w-100 text-lg">
+      <h3 className="softEntry w-90 p-1 text-(--cl3) bg-cyan-500/20 border border-cyan-300 text-center uppercase rounded-full font-bold md:w-60 text-lg">
         Como tu lo prefieras
       </h3>
       <div className="w-full flex flex-col gap-5 p-5 items-center justify-between sm:flex-row md:justify-around lg:w-11/12">
@@ -142,7 +142,7 @@ export default function About() {
           </div>
         </article>
       </div>
-      <h3 className="softEntry w-90 p-3 text-(--cl3) bg-cyan-500/20 border border-cyan-300 text-center uppercase rounded-full font-bold md:w-100 text-lg">
+      <h3 className="softEntry w-90 p-1 text-(--cl3) bg-cyan-500/20 border border-cyan-300 text-center uppercase rounded-full font-bold md:w-60 text-lg">
         Conocenos
       </h3>
       <div className="relative w-full flex flex-col mt-5 text-center text-(--cl4) gap-7 p-2 lg:w-10/12 lg:grid lg:grid-cols-2 lg:items-start lg:p-5 lg:gap-10">

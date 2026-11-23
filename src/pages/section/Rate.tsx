@@ -1,9 +1,12 @@
+import { useState } from "react";
 import moveTo from "@/utils/moveTo";
 import cardsService from "@data/cardsService.json";
 import { FaBone } from "react-icons/fa6";
 import { PiFlowerLotusFill } from "react-icons/pi";
 import { MdSportsGymnastics } from "react-icons/md";
 import { GiBowlSpiral } from "react-icons/gi";
+import { TbTruckDelivery } from "react-icons/tb";
+import { GiFamilyHouse } from "react-icons/gi";
 import type { IconType } from "react-icons";
 
 interface Service {
@@ -16,6 +19,8 @@ interface Service {
 }
 
 export default function Rate() {
+  const [activeService, setActiveService] = useState(true);
+
   const services: Service[] = cardsService;
 
   const icons: Record<string, IconType> = {
@@ -28,7 +33,7 @@ export default function Rate() {
     <section
       id="rate"
       className="relative flex flex-col items-center pt-10 xl:pt-30 after:absolute after:-z-10 after:w-300 after:bg-transparent after:top-0 after:right-0 after:border-white after:border-t-200 after:border-b-transparent after:border-b-100 after:rounded-b-lg after:border-r-transparent after:border-r-500 after:border-l-100 after:border-l-transparent md:after:border-r-850 xl:after:border-l-2000 xl:after:border-r-1100 2xl:after:border-l-1000 2xl:after:border-r-1500">
-      <h3 className="softEntry w-90 p-3 text-(--cl1) bg-cyan-500/20 border border-cyan-300 text-center uppercase rounded-full font-bold self-center text-lg mb-5 md:w-100">
+      <h3 className="softEntry w-90 p-1 text-(--cl1) bg-cyan-500/20 border border-cyan-300 text-center uppercase rounded-full font-bold self-center text-lg mb-2 md:w-60">
         Tratamientos
       </h3>
       <h2 className="fadeEntry text-(--cl0) text-center font-fnt2 text-3xl lg:mt-5 xl:text-8xl">
@@ -61,6 +66,30 @@ export default function Rate() {
             </article>
           );
         })}
+      </div>
+
+      <h3 className="softEntry w-90 p-1 mt-5 text-(--cl1) bg-cyan-500/20 border border-cyan-300 text-center uppercase rounded-full font-bold self-center text-lg mb-2 md:w-60">
+        TARIFAS CLARAS
+      </h3>
+      <h2 className="fadeEntry text-(--cl0) text-center font-fnt2 text-3xl lg:mt-5 xl:text-8xl">
+        PLANES y TARIFAS
+      </h2>
+
+      <div className="flex justify-center w-full">
+        <div className="mt-8 inline-flex items-center bg-navy-950 p-1.5 rounded-full border border-white/10 shadow-2xl gap-2 self-center">
+          <button
+            id="btn-pricing-clinic"
+            onClick={() => setActiveService(!activeService)}
+            className={`flex flex-row items-center  rounded-full p-3 gap-2 ${activeService ? "bg-(--cl1) text-(--cl2)" : "bg-transparent text-(--cl6)"}`}>
+            <GiFamilyHouse size={24} /> En Consultorio (Naranjo)
+          </button>
+          <button
+            id="btn-pricing-home"
+            onClick={() => setActiveService(!activeService)}
+            className={`flex flex-row items-center rounded-full p-3 gap-2 ${!activeService ? "bg-(--cl1) text-(--cl2)" : "bg-transparent text-(--cl6)"}`}>
+            <TbTruckDelivery size={24} /> A Domicilio (Corredores)
+          </button>
+        </div>
       </div>
     </section>
   );
